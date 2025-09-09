@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@keyframes float-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.animate-float-down {
+  animation: float-down 2s infinite ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
