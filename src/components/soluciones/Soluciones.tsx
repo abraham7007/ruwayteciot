@@ -96,9 +96,9 @@ export const Soluciones = () => {
             }}
             onBeforeInit={(swiper) => {
               // conecta los botones antes de inicializar
-              // @ts-expect-error
+              // @ts-expect-error: Necesario para el slider
               swiper.params.navigation.prevEl = prevRef.current;
-              // @ts-expect-error
+              // @ts-expect-error: Necesario para el slider
               swiper.params.navigation.nextEl = nextRef.current;
             }}
             breakpoints={{
